@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Universo de Lucía</title>
+
+<style>
+
+body{
+background:#ffd6e7;
+font-family:Arial;
+text-align:center;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:20px;
+width:80%;
+margin:auto;
+}
+
+button{
+padding:10px;
+border:none;
+border-radius:10px;
+background:pink;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🌷 Universo de Lucía 🌷</h1>
+
+<div class="card">
+
+<p id="mensaje">
+Haz clic para recibir un mensaje bonito
+</p>
+
+<button onclick="mostrar()">
+✨ Descubrir
+</button>
+
+</div>
+
+<script>
+
+function mostrar(){
+
+let frases=[
+
+"🌸 Eres más increíble de lo que crees.",
+
+"🦋 Hoy puede ser un gran día.",
+
+"☀️ Nunca olvides sonreír.",
+
+"🌷 Tu presencia alegra más de lo que imaginas."
+
+];
+
+let numero=Math.floor(Math.random()*frases.length);
+
+document.getElementById("mensaje").innerHTML=frases[numero];
+
+}
+
+</script>
+
+</body>
+
+</html>
